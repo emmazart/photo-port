@@ -26,13 +26,12 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
   return (
     <div>
       <Nav
-      //pass currentCategory and setter to Nav component
         categories={categories} 
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
       ></Nav>
       <main>
-        <Gallery></Gallery>
+        <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
       </main>
     </div>
